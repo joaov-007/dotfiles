@@ -1,0 +1,103 @@
+cookies.sqlite
+cookies.sqlite-wal
+favicons.sqlite-wal
+logins.json
+places.sqlite-wal
+prefs.js
+storage/
+datareporting/
+webappsstore.sqlite
+webappsstore.sqlite-wal
+weave/
+addonStartup.json.lz4
+favicons.sqlite
+permissions.sqlite
+places.sqlite
+protections.sqlite
+search.json.mozlz4
+serviceworker.txt
+sessionCheckpoints.json
+SiteSecurityServiceState.txt
+storage-sync.sqlite
+storage.sqlite
+bookmarkbackups
+saved-telemetry-pings
+sessionstore.jsonlz4
+addons.json
+AlternateServices.txt
+content-prefs.sqlite
+extensions.json
+formhistory.sqlite
+xulstore.json
+datareporting/
+datesecurity_state
+
+# ## exclude everything and only allow specific files
+*
+!.gitignore
+
+# ###################################
+# ## FIREFOX
+# ##  based on https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
+!profiles.ini
+!installs.ini
+#
+# ## profiles
+!Profiles/
+!Profiles/*/
+#
+# ##  bookmarks, downloads & browsing history
+!Profiles/*/places.sqlite
+#!Profiles/*/favicons.sqlite
+!Profiles/*/bookmarkbackups/
+!Profiles/*/bookmarkbackups/*
+#
+# ##  site-specific preferences
+!Profiles/*/permissions.sqlite
+!Profiles/*/content-prefs.sqlite
+#
+# ##  search engins
+#!Profiles/*/search.json.mozlz4
+#
+# ##  personal dictionary
+!Profiles/*/persdict.dat
+#
+# ##  autocompelte history
+#!Profiles/*/formhistory.sqlite
+#
+# ##  cookies & passwords
+# ##   NEVER STORE THEM UNENCRYPTED
+#!Profiles/*/key4.db
+#!Profiles/*/logins.json
+#!Profiles/*/cookies.sqlite
+#
+# ##  DOM storage
+# ##   NEVER STORE THEM UNENCRYPTED?
+#!Profiles/*/webappsstore.sqlite
+#!Profiles/*/chromeappsstore.sqlite
+#
+# ##  Extensions
+!Profiles/*/extension*
+!Profiles/*/extensions/*
+#
+# ##  security certificate settings
+#!Profiles/*/cert9.db
+#
+# ##  security device settings
+#!Profiles/*/pkcs11.txt
+#
+# ##  download actions
+#!Profiles/*/handlers.json
+#
+# ##  stored sessions
+!Profiles/*/sessionstore.jsonlz4
+#
+# ##  toolbar customization
+!Profiles/*/xulstore.json
+#
+# ##  user preferences
+!Profiles/*/prefs.js
+!Profiles/*/user.js
+#
+# ##  containers
+!Profiles/*/containers.json
